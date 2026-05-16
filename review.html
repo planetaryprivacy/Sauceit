@@ -9,6 +9,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
     <title>Customer Reviews</title> 
+<style>
+.Top{
+    height: 100vh;
+    background-image: url("images/shoes-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.overlay{
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(91, 113, 225);
+    text-align: center;
+}
+</style>
 
      <nav> <a href="index.html"></a><img src="Source it !.jpg" alt="Company Logo" width="100"></a> 
 
@@ -32,13 +60,38 @@
 <body> 
 
     <header> 
-
+<section class="Top">
+    <div class="overlay">
+        <img src="Feedbackpicture.jpg" alt="Feedback picture">
         <h1>Customer Reviews</h1> 
-            <p>We value our customers' feedback and strive to provide the best shopping experience possible. Here are some of the reviews from our satisfied customers:</p>
-
-
+            <p>We value our customer feedback and strive to provide the best shopping experience possible. Here are some of the reviews from our satisfied customers:</p>
+        <p>This is where as the customer you give feedback about the shoe you have gitten a chance to test out</p> 
+        <p> is carried out in order to be able to improve the information we give out This is completetly optional </p>
+  </div>
+</section>
     </header>
- 
+   <h2>Lets start</h2>
+    <input type="text" name="firstname" size="20" maxlength="35" value="First Name">
+    <input type="text" name="lastname" size="20" maxlength="35" value="Last Name">
+    <input type="email" name="email" size="20" maxlength="35" value="Email">
+     <p>Check the way you felt about the shoes</p>
+    <input type="checkbox" name="box number 1" value="1/5">1/5>
+    <input type="checkbox" name="box number 2" value="2/5">2/5>
+    <input type="checkbox" name="box number 3" value="3/5">3/5>
+    <input type="checkbox" name="box number 4" value="4/5">4/5>
+    <input type="checkbox" name="box number 5" value="5/5">5/5>
+    <p>Choose the shoe you are reviewing</p>
+    <select name="function">
+	<option>comfort</option>
+	<option>casual</option>
+    <option>active</option>
+	
+    </select>
+
+    <textarea name="feedback" rows="5" cols="40">Briefly specify the shoe and how it felt</textarea>
+    <button type="submit">Submit Feedback</button>
+    <button type="reset">Reset</button>
+
 
     <footer> 
 
